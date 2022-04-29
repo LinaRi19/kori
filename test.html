@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="logo.png" width="300px" height="200px">
+        <h1 style="margin-left:15px; display: inline; padding-left: 50px;">Corentain.com</h1>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Большие животные
+                        <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#d1">Северный олень</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myAverage()">Средние животные
+                            <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown2">
+                    <a href="#wolf">Волк</a>
+                    <a href="#laguh">Гигантская лягушка</a>
+                    <a href="#barsuk">Пещерный барсук</a>
+                    <a href="#kaban">Кабан</a>
+                    <a href="#blackBear">Черный медведь</a>
+                    <a href="#hourse">Лошадь</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myError()">Недоступные
+                            <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myError">
+                    <a href="#sovomed">Совомедведь</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    </div>
+
+    <!--ОЛЕНЬ-->
+    <div class="d1 container1" id="d1">
+        <img class="leftimg img1" src="https://static.wikia.nocookie.net/the-demonic-paradise/images/1/10/Stag.png/revision/latest?cb=20171216040945">
+
+        <img src="animals/олень.png">
+
+
+        <div class="containerfoot">
+            <div class="lina">
+                <h1>Попадание</h1>
+
+
+                <input class="button7" type="button" value="Generator number" onclick="randomNum()" />
+                <p>Без модификатора
+                    <div id="num"></div>
+                </p>
+                <p>С модификатором (5) </p>
+                <div id="modnum"></div>
+
+            </div>
+            <h1 class="random" style="margin-right: 50px; float: left;">Атаки</h1>
+            <div class="lina">
+                <p>Таран (1d6 + 3)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="randomTaran()" />
+                <div id="attack1" style="display: block; padding-top: 30px;"></div>
+
+
+                <p>Копыта (2d4 + 3)</p>
+                <input class="button7" type="button" value="Generator number" onclick="randomKop()" />
+                <div id="attack2" style="display: block; padding-top: 30px;"></div>
+
+            </div>
+
+            <h1 class="random" style="margin-right: 50px; float: left;">
+                <p style="float: left;">Спас по силе :</p>
+                <div style="color: greenyellow;"> 13</div>
+            </h1>
+
+
+        </div>
+    </div>
+
+    <!--ВОЛК-->
+    <div class="wolf container1" id="wolf">
+        <img class="leftimg img1" src="https://i.pinimg.com/564x/f2/0b/d8/f20bd8930314b1b4c37abcc38fa1e8c4.jpg">
+        <img src="animals/волк.png">
+
+
+        <div class="containerfoot">
+            <div class="lina">
+                <h1>Попадание</h1>
+
+
+                <input class="button7" type="button" value="Generator number" onclick="randomNum()" />
+                <p>Без модификатора
+                    <div id="numWolf"></div>
+                </p>
+                <p>С модификатором (4) </p>
+                <div id="modnumWolf"></div>
+
+            </div>
+            <h1 class="random" style="margin-right: 50px; float: left;">Атаки</h1>
+            <div class="lina">
+                <p>Кусь (2d4 + 2)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackWolf()" />
+                <div id="wolfKus" style="display: block; padding-top: 30px;"></div>
+
+            </div>
+
+            <h1 class="random" style="margin-right: 50px; float: left;">
+                <p style="float: left;">Спас по силе :</p>
+                <div style="color: greenyellow;"> 11</div>
+            </h1>
+        </div>
+
+    </div>
+
+    <!--ЛЯГУШКА-->
+    <div class="wolf container1" id="laguh">
+        <img class="leftimg img1" src="https://dnd.su/gallery/bestiary/340_1_1552247276.jpg">
+        <img src="animals/лягушка.png">
+
+        <div class="containerfoot">
+            <div class="lina">
+                <h1>Попадание</h1>
+
+                <input class="button7" type="button" value="Generator number" onclick="randomNum()" />
+                <p>Без модификатора
+                    <div id="numLag"></div>
+                </p>
+                <p>С модификатором (3) </p>
+                <div id="modnumLag"></div>
+            </div>
+            <h1 class="random" style="margin-right: 50px; float: left;">Атаки</h1>
+            <div class="lina">
+                <p>Кусь (1d6 + 1)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackLag1()" />
+                <div id="lagKus" style="display: block; padding-top: 30px;"></div>
+
+
+                <p>Проглатывание (2d4)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackLag2()" />
+                <div id="lagPro" style="display: block; padding-top: 30px;"></div>
+
+            </div>
+
+            <h1 class="random" style="margin-right: 50px; float: left;">
+                <p style="float: left;">Спас по силе :</p>
+                <div style="color: greenyellow;"> 11</div>
+            </h1>
+
+
+        </div>
+
+    </div>
+
+    <!--БАРСУК-->
+    <div class="wolf container1" id="barsuk">
+        <img class="leftimg img1" src="https://dnd.su/gallery/bestiary/327_1511808295.jpg">
+        <img src="animals/барсук.png">
+
+        <div class="containerfoot">
+            <div class="lina">
+                <h1>Попадание</h1>
+
+                <input class="button7" type="button" value="Generator number" onclick="randomNum()" />
+                <p>Без модификатора
+                    <div id="numBar"></div>
+                </p>
+                <p>С модификатором (3) </p>
+                <div id="modnumBar"></div>
+
+            </div>
+            <h1 class="random" style="margin-right: 50px; float: left;">Мультиатака</h1>
+            <div class="lina">
+                <p>Кусь (1d6 + 1)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackBar1()" />
+                <div id="Bar1" style="display: block; padding-top: 30px;"></div>
+
+                <p>Когти (2d4 + 1)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackBar2()" />
+                <div id="Bar2" style="display: block; padding-top: 30px;"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--КАБАН-->
+    <div class="wolf container1" id="kaban">
+        <img class="leftimg img1" src="https://funart.pro/uploads/posts/2022-01/1641974964_1-funart-pro-p-zloi-kaban-zhivotnie-1.jpg">
+        <img src="animals/кабан.png">
+
+        <div class="containerfoot">
+            <div class="lina">
+                <h1>Попадание</h1>
+
+                <input class="button7" type="button" value="Generator number" onclick="randomNum()" />
+                <p>Без модификатора
+                    <div id="numKab"></div>
+                </p>
+                <p>С модификатором (3) </p>
+                <div id="modnumKab"></div>
+
+            </div>
+            <h1 class="random" style="margin-right: 50px; float: left;">Атаки</h1>
+            <div class="lina">
+                <p>Клык (1d6 + 1)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackKab1()" />
+                <div id="Kab1" style="display: block; padding-top: 30px;"></div>
+
+                <p>Доп урон (1d6)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackKab2()" />
+                <div id="Kab2" style="display: block; padding-top: 30px;"></div>
+
+            </div>
+
+            <h1 class="random" style="margin-right: 50px; float: left;">
+                <p style="float: left;">Спас по силе :</p>
+                <div style="color: greenyellow;"> 11</div>
+            </h1>
+        </div>
+
+    </div>
+
+    <!--ЧЕРНЫЙ МЕДВЕДЬ-->
+    <div class="wolf container1" id="blackBear">
+        <img class="leftimg img1" src="https://dnd.su/gallery/bestiary/414_1516394889.jpg">
+        <img src="animals/черныймедведь.png">
+
+        <div class="containerfoot">
+            <div class="lina">
+                <h1>Попадание</h1>
+
+                <input class="button7" type="button" value="Generator number" onclick="randomNum()" />
+                <p>Без модификатора
+                    <div id="numBlackBear"></div>
+                </p>
+                <p>С модификатором (4) </p>
+                <div id="modnumBlackBear"></div>
+
+            </div>
+            <h1 class="random" style="margin-right: 50px; float: left;">Мультиатака</h1>
+            <div class="lina">
+                <p>Кусь (1d6 + 2)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackBlackBear1()" />
+                <div id="BlackBear1" style="display: block; padding-top: 30px;"></div>
+
+                <p>Когти (2d4 + 2)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackBlackBear2()" />
+                <div id="BlackBear2" style="display: block; padding-top: 30px;"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--ЛОШАДЬ-->
+    <div class="wolf container1" id="hourse">
+        <img class="leftimg img1" src="https://dnd.su/gallery/bestiary/412_1_1587215928.jpg">
+        <img src="animals/лошадь.png">
+
+        <div class="containerfoot">
+            <div class="lina">
+                <h1>Попадание</h1>
+
+                <input class="button7" type="button" value="Generator number" onclick="randomNum()" />
+                <p>Без модификатора
+                    <div id="numHourse"></div>
+                </p>
+                <p>С модификатором (6) </p>
+                <div id="modnumHourse"></div>
+
+            </div>
+            <h1 class="random" style="margin-right: 50px; float: left;">Атаки</h1>
+            <div class="lina">
+                <p>Копыта (2d4 + 4)</p>
+                <input class="button7 " type="button" value="Generator number" onclick="myAttackHourse()" />
+                <div id="Hourse" style="display: block; padding-top: 30px;"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!--СОВОМЕДВЕДЬ-->
+    <div class="wolf container1" id="sovomed">
+        <img class="leftimg img1" src="https://static.wikia.nocookie.net/forgottenrealms/images/6/64/SnowyOwlbear.jpg/revision/latest?cb=20200623200054">
+        <img src="animals/совомедведь.png">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
